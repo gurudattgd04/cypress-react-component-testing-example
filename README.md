@@ -12,7 +12,7 @@ For this example i have created a simple react app which flips the card upon cli
 
 <p align="middle">
 
-![image.png](./readmeReferenceFiles/ReactApp.gif)
+![image.png](./readmeReferenceFiles/ReactSampleApp.gif)
 
 </p>
 
