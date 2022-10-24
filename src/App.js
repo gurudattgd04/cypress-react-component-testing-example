@@ -14,9 +14,9 @@ function App() {
     <div>
       <header>
         <h1>
-          Study<span className="titleHighlight">Deck</span>
+          Card<span className="titleHighlight">Flip</span>
         </h1>
-        <h2>Rentention through repition</h2>
+        <h2>Lets Get Lucky</h2>
       </header>
       <main>
         <h3>Your cards</h3>
