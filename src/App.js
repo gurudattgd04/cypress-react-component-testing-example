@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import "./normalize.css";
+import "./App.css";
+import { CardPreview } from "./components/CardPreview";
+import { getCards } from "./services/cardService";
 
 function App() {
+  const [cards, setCards] = React.useState([]);
+  React.useEffect(() => {
+    getCards().then(setCards);
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div>
+      <header>
+        <h1>
+          Study<span className="titleHighlight">Deck</span>
+        </h1>
+        <h2>Rentention through repition</h2>
       </header>
+      <main>
+        <h3>Your cards</h3>
+        <div className="gridContainer">
+          {cards.map(({ id, definition, term }) => (
+            <CardPreview key={id} definition={definition} term={term} />
+          ))}
+        </div>
+      </main>
     </div>
   );
 }
