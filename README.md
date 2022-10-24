@@ -37,14 +37,14 @@ By looking into our component, we can see that CardPreview component accepts pro
 @testing-library/react provides render function which accepts the Component to create Virtual DOM and returns functions using which we can query for the elements like below
 
 <p align="middle">
-<div style="overflow:hidden;margin-left:auto;margin-right:auto;border-radius:10px;width:100%;max-width:811px;position:relative"><div style="width:100%;padding-bottom:48.82860665844636%"></div><iframe width="811" height="396" title="Code snippet - cardPreview.spec.js" src="https://snappify.io/embed/0748da75-9b54-445a-b709-a13bc09683e5?responsive" allow="clipboard-write" style="position:absolute;left:0;top:0;width:100%" frameborder="0"></iframe></div>
+<img src="./readmeReferenceFiles/cardPreview_spec_js.png"/>
 </p>
 In the above test we are validating if the component loads the term we passed.
 
 Let's see how we can trigger button click events
 
 <p>
-<div style="overflow:hidden;margin-left:auto;margin-right:auto;border-radius:10px;width:100%;max-width:1268px;position:relative"><div style="width:100%;padding-bottom:39.511041009463725%"></div><iframe width="1268" height="501" title="Code snippet - cardPreview.spec.js" src="https://snappify.io/embed/0cadf71d-9fb5-4533-a671-b29908d57bf1?responsive" allow="clipboard-write" style="position:absolute;left:0;top:0;width:100%" frameborder="0"></iframe></div>
+<img src="./readmeReferenceFiles/cardPreview_spec_js-2.png"/>
 <p/>
 
 In the above test we have used fireEvent from @testing-library/react to trigger button click event and we are validating whether the flipping card changes the text from term to definition
@@ -90,7 +90,9 @@ In Jest with @testing-library/react we used render function to render the compon
 
 Our test will look like below
 
-<div style="overflow:hidden;margin-left:auto;margin-right:auto;border-radius:10px;width:100%;max-width:892px;position:relative"><div style="width:100%;padding-bottom:58.52017937219731%"></div><iframe width="892" height="522" title="Code snippet - CardPreview.cy.js" src="https://snappify.io/embed/a838e853-f13c-45e0-9906-06b77f7d2c12?responsive" allow="clipboard-write" style="position:absolute;left:0;top:0;width:100%" frameborder="0"></iframe></div>
+<p align="middle">
+<img src="./readmeReferenceFiles/CardPreview_cy_js.png"/>
+</p>
 
 As we can see, once we mount the component, our cypress commands just looks like how we use it in end to end testing.
 
@@ -124,7 +126,9 @@ Great, our component test is working fine and we can see the test running and co
 
 In order for CSS to be loading while we mount our component test, we need to import the CSS in cypress/support/component.js file like below
 
-<div style="overflow:hidden;margin-left:auto;margin-right:auto;border-radius:10px;width:100%;max-width:456px;position:relative"><div style="width:100%;padding-bottom:55.92105263157895%"></div><iframe width="456" height="255" title="Code snippet - component.js" src="https://snappify.io/embed/b16d433d-e1f1-4c8f-81dd-b476374fef74?responsive" allow="clipboard-write" style="position:absolute;left:0;top:0;width:100%" frameborder="0"></iframe></div>
+<p align="middle">
+<img src="./readmeReferenceFiles/component_js.png"/>
+</p>
 
 Once we save the file, our Cyress component test automatically runs with CSS loaded
 
