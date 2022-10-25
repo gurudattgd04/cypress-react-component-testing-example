@@ -82,7 +82,7 @@ With cypress we can load our component in real browser and write tests the way w
 <img src="./readmeReferenceFiles/Config.png"/>
 </p>
 
-**Note: All the pre-requisites are installed in this project.**
+**Note: All the pre-requisites are installed in this project, so you can just execute npm install.**
 
 ### Writing our first component test using cypress
 
