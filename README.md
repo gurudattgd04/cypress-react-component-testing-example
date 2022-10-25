@@ -2,9 +2,11 @@
 
 ## Introduction
 
-React application is made up of components and the react framework comes bundled with testing library @testing-library/react. The react testing library utilizes JEST to run the tests and the tests runs by creating Virtual DOM and we will not know the look and feel of the component without starting the full application.
+React application is made up of components and the react framework comes bundled with testing library @testing-library/react for writing unit tests.
 
-If we know how our component looks at the early development stage and imagine how beneficial it will be to load the component in real browser which gives feedback during development stage itself and we can then write tests for these components, which includes functional as well as visual.
+The react testing library utilizes JEST to run the tests and the tests runs by creating Virtual DOM and we will not know the look and feel of the component without starting the full application.
+
+If we know how our component looks at the early development stage and imagine how beneficial it will be to load the component in real browser which gives feedback during development stage itself, we can then write tests for these components which includes functional as well as visual checks.
 
 ### Getting Started
 
@@ -65,7 +67,7 @@ With cypress we can load our component in real browser and write tests the way w
 
 **pre-requisites**
 
-1. Install cypress by executing command **npm install cypress**
+1. Install cypress by executing command **npm install cypress** and **npm install** for installing all the repo dependencies
 2. Open cypress by executing command **npx cypress open**
 3. Select the Component Testing as testing type
 <p align="middle">
@@ -80,7 +82,7 @@ With cypress we can load our component in real browser and write tests the way w
 <img src="./readmeReferenceFiles/Config.png"/>
 </p>
 
-**Note: In this repository i have configured everything needed.**
+**Note: All the pre-requisites are installed in this project.**
 
 ### Writing our first component test using cypress
 
